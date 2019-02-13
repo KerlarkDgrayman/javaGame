@@ -30,7 +30,7 @@ public class Draw extends JComponent{
 
 	// enemy
 	public int enemyCount;
-	
+
 	Monster[] monsters = new Monster[10];
 
 	public Draw(){
@@ -185,7 +185,7 @@ public class Draw extends JComponent{
 				for(int ctr = 4; ctr < 8; ctr++){
 					try {
 						if(ctr==7){
-							resource = getClass().getResource("run10.png");
+							resource = getClass().getResource("run6.png");
 						}
 						else{
 							resource = getClass().getResource("attack"+ctr+".png");
