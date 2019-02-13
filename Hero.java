@@ -8,7 +8,7 @@ public class Hero{
 		this.def = def;
 	}
 	public void attack(){
-
+		super();
 
 	}
 	public void getAtt(){
