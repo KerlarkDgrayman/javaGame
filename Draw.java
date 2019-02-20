@@ -13,11 +13,11 @@ public class Draw extends JComponent{
 	private BufferedImage image;
 	private BufferedImage backgroundImage;
 	public URL resource = getClass().getResource("run0.png");
-	public URL resource1 = getClass().getResource("run10.png");
+	public URL resource1 = getClass().getResource("attack0.png");
 	
 	// circle's position
-	public int x = 300;
-	public int y = 300;
+	public int x = 250;
+	public int y = 220;
 	public int height = 0;
 	public int width = 0;
 	
@@ -114,22 +114,22 @@ public class Draw extends JComponent{
 		state++;
 
 		if(state == 0){
-			resource = getClass().getResource("run10.png");
+			resource = getClass().getResource("run6.png");
 		}
 		else if(state == 1){
-			resource = getClass().getResource("run11.png");
+			resource = getClass().getResource("run7.png");
 		}
 		else if(state == 2){
-			resource = getClass().getResource("run12.png");
+			resource = getClass().getResource("run8.png");
 		}
 		else if(state == 3){
-			resource = getClass().getResource("run13.png");
+			resource = getClass().getResource("run9.png");
 		}
 		else if(state == 4){
-			resource = getClass().getResource("run14.png");
+			resource = getClass().getResource("run10.png");
 		}
 		else if(state == 5){
-			resource = getClass().getResource("run15.png");
+			resource = getClass().getResource("run11.png");
 			state = 0;
 		}
 
@@ -150,7 +150,7 @@ public class Draw extends JComponent{
 							resource = getClass().getResource("run0.png");
 						}
 						else{
-							resource = getClass().getResource("attack"+ctr+".png");
+							resource1 = getClass().getResource("attack"+ctr+".png");
 						}
 						
 						try{
@@ -188,7 +188,7 @@ public class Draw extends JComponent{
 							resource = getClass().getResource("run6.png");
 						}
 						else{
-							resource = getClass().getResource("attack"+ctr+".png");
+							resource1 = getClass().getResource("attack"+ctr+".png");
 						}
 						
 						try{
